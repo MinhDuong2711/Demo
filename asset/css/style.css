@@ -2,30 +2,65 @@ html {
     font-family: "Quicksand", sans-serif;
 }
 
+body {
+    background-color: #f2f3f5;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
 .header {
     height: 90px;
     background-color: #248744;
     display: flex;
+    justify-content: space-around;
 }
 
 .logo-header {
     width: 100px;
     height: 90px;
-    margin-left: 163px;
 }
 
 .header-search {
     line-height: 90px;
-    margin-left: 142px;
+}
+
+.header-account-myacc-icon {
+    font-size: 10px;
+}
+
+.header-account-icon {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 3px;
+    color: #ffffffce;
+
+}
+
+.header-account {
+    margin-top: 28px;
+    display: flex;
+}
+
+.header-account-signin {
+    color: #ffffff9a;
+}
+
+.header-account-myacc {
+    color: #ffffffce;
+
 }
 
 .input-search {
+    position: relative;
     width: 618px;
     height: 40px;
     border-radius: 10px;
@@ -44,14 +79,15 @@ html {
     margin: 0 60px;
 }
 .slider-img {
-    margin-top: 70px;
+    margin-top: 15px;
     height: 400px;
     width: 749px;
     border-radius: 10px;
-
+    box-shadow: 1px 1px 8px #0000006e;
 }
 
 .slider-img-group {
+    box-shadow: 1px 1px 8px #0000006e;
     height: 127px;
     width: 341px;
     display: block;
@@ -60,10 +96,128 @@ html {
 }
 
 .slider-img-group:first-child {
-    margin-top: 70px;
+    margin-top: 15px;
 }
 
+.slider-img-scale:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.slider-bar {
+    width: 100%;
+    height: 46px;
+    padding-left: 355px;
+    background-color: #fff;
+}
+
+.slider-bar p {
+    display: inline-block;
+    line-height: 46px;
+    margin-right: 22px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.slider-bar-quality-icon,
+.slider-bar-transport-icon,
+.slider-bar-phone-icon {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.category {
+    background-color: #fff;
+    height: 480px;
+    box-shadow: 0.5px 0.5px 4px #00000085;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+    margin-top: -45.4px;
+}
+
+.category-icon {
+    margin-left: 14px;
+    margin-right: 8px;
+}
+
+.category-name {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+
+.category-list {
+    display: block;
+}
+
+.category-item {
+    line-height: 36px;
+    width: 248px;
+}
+
+.category-item a {
+    padding-left: 18px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    
+}
+
+.category-item-more:hover a::after {
+    display: block;
+    content: "";
+    height: 46px;
+    width: 3px;
+    float: left;
+    margin-left: -18px;
+    background-color: #ffd500fd;
+    border-radius: 3px;
+}
+
+.category-item:hover a::after {
+    display: block;
+    content: "";
+    height: 36px;
+    width: 3px;
+    float: left;
+    margin-left: -18px;
+    background-color: #ffd500fd;
+    border-radius: 3px;
+}
+
+.category-item:hover a {
+    background-color: #f3f5fc;
+    color: #4000ff43;
+    display: block;
+}
+
+.category-item-more {
+    line-height: 46px;
+
+}
+
+.category-item-more a {
+    color: rgba(255, 196, 0, 0.975);
+    text-decoration: none;
+    padding-left: 18px;
+    display: block;
+}
+
+.category-item-more:hover  {
+    background-color: #f3f5fc;
+
+}
+
+.category-item-more-icon {
+
+}
+    
+
 .slider2 {
+    margin-top: 24px;
     margin-bottom: 60px;
 }
 
@@ -72,7 +226,8 @@ html {
     justify-content: space-around;
 }
 
-.slder-img-group2 {
+.slider-img-group2 {
+    box-shadow: 1px 1px 8px #0000006e;
     height: 136px;
     width: 320px;
     border-radius: 10px;
@@ -96,6 +251,10 @@ html {
     justify-content: space-around;
     /* padding-bottom: 85px; */
 }
+
+.promotion-production-icon {
+    color: #fff;
+} 
 
 .promotion-production {
     padding-top: 18px;
@@ -128,6 +287,7 @@ html {
 .production-name {
     margin-left: 14px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .production-price {
@@ -173,6 +333,11 @@ text-align: center;
     cursor: pointer;
     background-color: #fff;
     color: rgba(0, 0, 0, 0.56);
+}
+
+.production-drs {
+    margin-left: 14px;
+    margin-bottom: 10px;
 }
 
 .production-btn:hover {
