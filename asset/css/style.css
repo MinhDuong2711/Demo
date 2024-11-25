@@ -16,7 +16,6 @@ body {
     box-sizing: border-box;
 }
 
-
 .header {
     height: 90px;
     background-color: #248744;
@@ -45,7 +44,6 @@ body {
     margin-right: 10px;
     margin-top: 3px;
     color: #ffffffce;
-
 }
 
 .header-account {
@@ -59,7 +57,6 @@ body {
 
 .header-account-myacc {
     color: #ffffffce;
-
 }
 
 .input-search {
@@ -108,8 +105,12 @@ body {
     margin-top: 15px;
 }
 
+.slider-img-scale {
+
+}
+
 .slider-img-scale:hover {
-    transition: all 0.3s ease-in-out;
+    animation: forwards;
 }
 
 .slider-bar {
@@ -133,7 +134,6 @@ body {
 .slider-bar-phone-icon {
     font-size: 20px;
     font-weight: 500;
-
 }
 
 .category {
@@ -173,7 +173,6 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     display: block;
-    
 }
 
 .category-item-more:hover a::after {
@@ -206,7 +205,6 @@ body {
 
 .category-item-more {
     line-height: 46px;
-
 }
 
 .category-item-more a {
@@ -218,14 +216,12 @@ body {
 
 .category-item-more:hover  {
     background-color: #f3f5fc;
-
 }
 
 .category-item-more-icon {
 
 }
     
-
 .slider2 {
     margin-top: 24px;
     margin-bottom: 60px;
@@ -249,6 +245,7 @@ body {
 }
 
 .production1 {
+
 }
 
 .top-production {
@@ -260,7 +257,6 @@ body {
 .production {
     display: flex;
     justify-content: space-around;
-    /* padding-bottom: 85px; */
 }
 
 .promotion-production-icon {
@@ -288,7 +284,7 @@ body {
 }
 
 .production-img {
-    margin: 58px 5px;
+    margin: 45px 5px;
     width: 250px;
     height: 165px;
 }
@@ -304,7 +300,22 @@ body {
     margin-bottom: 10px;
     font-size: 25px;
     color: red;
+}
 
+.production-price-discount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-discount {
+    width: 60px;
+    line-height: 30px;
+    color: #fff;
+    background-color: rgb(255, 41, 41);
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 16px;
 }
 
 .production-price-delete {
@@ -314,6 +325,7 @@ body {
 }
 
 .production-buttun {
+    margin-top: 16px;
     margin-right: 14px;
     margin-bottom: 10px;
     float: right;
@@ -326,11 +338,12 @@ body {
 }
 
 .production-buttun:hover {
-    background-color: #24874394;
+    background-color: #248743e5;
+    color: rgba(255, 251, 0, 0.944);
 }
 
 .prodution-btn-pre {
-text-align: center;
+    text-align: center;
     line-height: 102px;
 }
 
@@ -378,7 +391,7 @@ text-align: center;
 .copyright-drs {
     margin-bottom: 15px;
     font-size: 14px;
-    color: #f3f5fccf;
+    color: #f3f5fcee;
 }
 
 .copyright-img {
@@ -416,35 +429,35 @@ text-align: center;
 .contact-header {
     font-size: 30px;
     font-weight: 700;
-    color: #f2f3f5;
+    color: #f3f5fcee;
     margin-bottom: 32px;  
 }
 
 .contact-location {
-    color: #f2f3f5df;
+    color: #f3f5fcee;
     font-size: 14px;
     margin-bottom: 8px;
 }
 
 .contact-location-icon {
-    color: #f2f3f5df;
-
+    color: #f3f5fcee;
 }
 
 .contact-phone {
-    color: #f2f3f5df;
+    color: #f3f5fcee;
     margin-bottom: 8px;
 }
 .contact-phone-icon {
-    color: #f2f3f5df;
-    
+    color: #f3f5fcee;
 }
+
 .contact-email {
-    color: #f2f3f5df;
+    color: #f3f5fcee;
     
 }
+
 .contact-email-icon {
-    color: #f2f3f5df;
+    color: #f3f5fcee;
 }
 
 .policy {
@@ -455,7 +468,7 @@ text-align: center;
     margin-bottom: 32px;
     font-size: 30px;
     font-weight: 700;
-    color: #f2f3f5;
+    color: #f3f5fcee;
     margin-bottom: 32px;
 }
 
@@ -465,7 +478,7 @@ text-align: center;
 }
 
 .policy-list li a{
-    color: #f2f3f5df;
+    color: #f3f5fcee;
     text-decoration: none;
     font-size: 14px;
 }
@@ -474,14 +487,6 @@ text-align: center;
 .policy-list li a:hover{
     color: rgba(165, 42, 42, 0.668);
 }
-
-/* .footer-last::after {
-    display: block;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: #000;
-} */
 
 .footer-last {
     margin-top: 40px;
@@ -492,5 +497,5 @@ text-align: center;
     border-top: 1px solid #00000013;
     line-height: 40px;
     font-size: 12px;
-    color: #0000006d;
+    color: #00000057;
 }
