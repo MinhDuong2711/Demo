@@ -23,7 +23,7 @@ body {
     justify-content: space-around;
     position: sticky;
     top: 0px;
-    z-index: 2  ;
+    z-index: 2;
 }
 
 .logo-header {
@@ -87,9 +87,10 @@ body {
 .slider-img {
     margin-top: 15px;
     height: 400px;
-    width: 749px;
+    width: 710px;
     border-radius: 10px;
     box-shadow: 1px 1px 8px #0000006e;
+    overflow: hidden;
 }
 
 .slider-img-group {
@@ -234,7 +235,7 @@ body {
 
 .slider-img-group2 {
     box-shadow: 1px 1px 8px #0000006e;
-    height: 136px;
+    height: 160px;
     width: 320px;
     border-radius: 10px;
 }
@@ -265,7 +266,7 @@ body {
 
 .promotion-production {
     padding-top: 18px;
-    padding-left: 86px;
+    padding-left: 60px;
     padding-bottom: 23px;
     color: #fff;
 }
@@ -325,6 +326,47 @@ body {
 }
 
 .production-buttun {
+    display: flex;
+    justify-content: space-between;
+}
+
+.production-shopping-cart {
+    height: 36px;
+    margin-top: 16px;
+    color: #000;
+    font-size: 14px;
+    margin-left: 14px;
+    line-height: 36px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1; 
+}
+
+.production-shopping-cart p {
+    padding: 0 10px;
+}
+
+.production-shopping-cart::after {
+    display: block;
+    content: '';
+    width: 0;
+    top: 0;
+    height: 36px;
+    background-color: rgb(36 135 68);
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+    transition: width 0.3s linear;
+}
+
+.production-shopping-cart:hover,
+.production-shopping-cart:hover::after  {
+    width: 150px;
+    color: #fff;
+}
+  
+.button-buy {
     margin-top: 16px;
     margin-right: 14px;
     margin-bottom: 10px;
@@ -337,7 +379,7 @@ body {
     cursor: pointer;
 }
 
-.production-buttun:hover {
+.button-buy:hover {
     background-color: #248743e5;
     color: rgba(255, 251, 0, 0.944);
 }
