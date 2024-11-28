@@ -76,12 +76,16 @@ body {
 .slider2,
 .slider,
 .container {
-    margin: 0 60px;
-    width: 1400px;
+    width: 100%;
 }
 
 .container2 {
     
+}
+
+.slider-gr,
+.container-gr {
+    margin: 0 60px;
 }
 
 .slider-img {
@@ -115,7 +119,6 @@ body {
 }
 
 .slider-bar {
-    /* margin-top: 90px; */
     width: 100%;
     height: 46px;
     padding-left: 355px;
@@ -495,7 +498,6 @@ body {
 
 .contact-email {
     color: #f3f5fcee;
-    
 }
 
 .contact-email-icon {
